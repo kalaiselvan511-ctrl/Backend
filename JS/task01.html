@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Variables</h1>
+    <script>
+        console.log("Variables");
+
+        //var
+         
+        var a;
+        var b = 2;
+        console.log("we only declare a ",a);
+        console.log("we declare and assign value:",b);
+        b = 3;
+        console.log("we redeclare and reassign the value",b);
+        
+        
+
+        //let
+         let c;
+        let d = 4;
+        console.log("we only declare c ",c);
+        console.log("we declare and assign value:",d);
+        d= 5;
+        console.log("we redeclare and reassign the value",d);
+
+        // const
+        // const e;
+        const f = 6;
+        // console.log("we only declare  ");
+        console.log("we declare and assign value:",f);
+        //f= 7;
+        console.log("we redeclare and reassign the value",f);
+
+
+        console.log("Hoisting");
+        console.log(x);
+        // console.log(y);
+        // console.log(z);
+        var x=8;
+        // let y=9;
+        // const z=10;
+
+
+        console.log("Scope");
+        
+        var g1 = 11;
+        function gb() {
+            var lc =12;
+            console.log("we call g1 inside function",g1);
+            console.log("we call lc in the function",lc);
+            
+            
+        }
+        console.log("we call the g1 outside the funtion",g1);
+        // console.log("we call the lc outside the function",lc);
+        gb();
+
+        let g2=13;
+        function gb2() {
+            let lc2 =14;
+            console.log("we call g2 inside function",g2);
+            console.log("we call lc2 in the function",lc2);
+
+            
+        }
+         console.log("we call the g2 outside the funtion",g1);
+        // console.log("we call the lc2 outside the function",lc2);
+        
+        gb2();
+
+        const g3=15;
+        function gb3() {
+            const lc3 =16;
+            console.log("we call g3 inside function",g3);
+            console.log("we call lc3 in the function",lc3);
+
+            
+        }
+         console.log("we call the g3 outside the funtion",g3);
+        // console.log("we call the lc3 outside the function",lc3);
+        
+        gb3();
+
+        console.log("Arithmetic Operator");
+        
+        let plus = 12 + 12;
+        console.log("Add:",plus);
+        
+        let plus2 = "kalai" + "selvan";
+        console.log("Add:",plus2);
+
+        let plus3 = null ;
+        console.log("Add:",plus3);
+
+        let plus4 = null + null;
+        console.log("Add:",plus4)
+
+        let  plus5 = 123n + 123n;
+        console.log("Add:",plus5)
+
+        let plus6 = true + true;
+        console.log("Add:",plus6)
+
+        // let plus67 = true + false;
+        // console.log("Add:",plus7)
+
+        console.log("Arithmetic Operator");
+        
+        let sub = 12 - 10;
+        console.log("sub :",sub );
+        
+        // let sub2 = "kalai" - "selvan";
+        // console.log("sub :",sub 2);
+
+
+
+        let sub3 = null - null;
+        console.log("sub :",sub3)
+
+        let  sub5 = 123n - 123n;
+        console.log("sub :",sub5)
+
+        let sub6 = true - true;
+        console.log("sub :",sub6)
+
+        console.log("Arithmetic Operator");
+        
+        let mul= 12 * 10;
+        console.log("mul :",mul );
+        
+
+
+
+        let mul3 = null * null;
+        console.log("mul :",mul3)
+
+        let  mul4 = 123n * 123n;
+        console.log("mul :",mul4)
+
+        let mul5 = true * true;
+        console.log("mul:",mul5)
+
+        console.log("Arithmetic Operator");
+        
+        let mull= 12 ** 10;
+        console.log("mull :",mull);
+        
+
+
+
+        let mull3 = null ** null;
+        console.log("mull :",mull3)
+
+        let  mull4 = 123n ** 123n;
+        console.log("mull :",mull4)
+
+        let mull5 = true ** true;
+        console.log("mull:",mull5)
+
+        console.log("Arithmetic Operator");
+        
+        let div= 12 * 10;
+        console.log("div :",div );
+        
+
+
+
+        let div3 = null * null;
+        console.log("div :",div3)
+
+        let  div4 = 123n * 123n;
+        console.log("div :",div4)
+
+        let div5 = true * true;
+        console.log("div:",div5)
+
+
+
+ console.log("Assignment Operator");
+
+
+let a1= 10;
+console.log("a =", a1);
+
+
+let b12 = 5;
+b += 5;
+console.log("b +=", b12);
+
+
+// let c = "kalai";
+// c += " selvan";
+// console.log("c +=", c);
+
+
+// let d = null;
+// d += 10;
+// console.log("d +=", d);
+
+
+let e = 100n;
+e += 50n;
+console.log("e +=", e);
+
+// let f = true;
+// f += true;
+// console.log("f +=", f);
+
+console.log("Assignment Operator");
+
+
+let g = 20;
+g -= 5;
+console.log("g -=", g);
+
+let h = null;
+h -= null;
+console.log("h -=", h);
+
+let i = 50n;
+i -= 20n;
+console.log("i -=", i);
+
+let j = true;
+j -= true;
+console.log("j -=", j);
+
+console.log("Assignment Operator");
+
+
+let k = 10;
+k *= 5;
+console.log("k *=", k);
+
+let l = null;
+l *= null;
+console.log("l *=", l);
+
+let m = 10n;
+m *= 10n;
+console.log("m *=", m);
+
+let n = true;
+n *= true;
+console.log("n *=", n);
+
+console.log("Assignment Operator");
+
+
+let o = 2;
+o **= 5;
+console.log("o **=", o);
+
+let p = null;
+p **= null;
+console.log("p **=", p);
+
+let q = 2n;
+q **= 5n;
+console.log("q **=", q);
+
+let r = true;
+r **= true;
+console.log("r **=", r);
+
+console.log("Assignment Operator");
+
+
+let s = 20;
+s /= 5;
+console.log("s /=", s);
+
+let t = null;
+t /= null;
+console.log("t /=", t);
+
+let u = 100n;
+u /= 10n;
+console.log("u /=", u);
+
+let v = true;
+v /= true;
+console.log("v /=", v);
+
+
+console.log("Logical Operator");
+
+// AND (&&)
+let and1 = true && true;
+console.log("AND :", and1);
+
+let and2 = true && false;
+console.log("AND :", and2);
+
+let and3 = false && true;
+console.log("AND :", and3);
+
+let and4 = null && true;
+console.log("AND :", and4);
+
+let and5 = "kalai" && "selvan";
+console.log("AND :", and5);
+
+console.log("Logical Operator");
+
+// OR (||)
+let or1 = true || true;
+console.log("OR :", or1);
+
+let or2 = true || false;
+console.log("OR :", or2);
+
+let or3 = false || false;
+console.log("OR :", or3);
+
+let or4 = null || true;
+console.log("OR :", or4);
+
+let or5 = "" || "selvan";
+console.log("OR :", or5);
+
+console.log("Logical Operator");
+
+// NOT (!)
+let not1 = !true;
+console.log("NOT :", not1);
+
+let not2 = !false;
+console.log("NOT :", not2);
+
+let not3 = !null;
+console.log("NOT :", not3);
+
+let not4 = !"kalai";
+console.log("NOT :", not4);
+
+let not5 = !0;
+console.log("NOT :", not5);
+
+    </script>
+    
+</body>
+</html>
