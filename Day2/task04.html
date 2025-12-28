@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const user = {
+           name: "Ajay",
+           sayName: function () {
+           console.log(this.name);
+           },
+           saynameArrow: ()=>{
+            console.log(this.name);
+            
+           }   
+      };
+
+    //   sayName is show name 
+      user.sayName() 
+    //   saynameArrow is not show name  that is the different
+      user.saynameArrow() 
+      
+   
+
+    </script>
+</body>
+</html>
